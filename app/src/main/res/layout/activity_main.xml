@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number" />
+
+    <!--设置输入模式-->
+
+    <com.example.administrator.pinview.PINView.Pinview
+        android:id="@+id/pinview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cursorVisible="false"
+        app:forceKeyboard="true"
+        app:hint="-"
+        app:inputType="number"
+        app:password="false"
+        app:pinBackground="@drawable/example_drawable"
+        app:pinHeight="40dp"
+        app:pinLength="4"
+        app:pinWidth="40dp"></com.example.administrator.pinview.PINView.Pinview>
+
+</RelativeLayout>
